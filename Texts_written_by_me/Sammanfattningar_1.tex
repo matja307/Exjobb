@@ -1,0 +1,164 @@
+% !TEX encoding = MacOSRoman
+
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{listings}
+\usepackage[parfill]{parskip}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage[swedish]{babel}
+\usepackage[applemac]{inputenc}
+\usepackage[margin=35mm]{geometry}
+\usepackage{fancyhdr}
+\usepackage[encapsulated]{CJK}
+\usepackage{inconsolata}
+\usepackage{amssymb,amsmath}
+%\usepackage[demo]{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+
+
+
+\newenvironment{ppl}{\fontfamily{ppl}\selectfont}{}
+\newenvironment{inconsolata}{\texttt}{}
+
+
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+\addto\captionsswedish{%
+  \renewcommand{\figurename}{Figure}%
+  \renewcommand{\tablename}{Table}%
+}
+
+\begin{document}
+
+\section*{Lateral Enlargement Growth Mechanism of 3C-SiC on Off-Oriented 4H-SiC Substrates}
+\emph{Jokubavicius, Valdas
+Yazdi, G Reza
+Liljedahl, Rickard
+Ivanov, Ivan G
+Yakimova, Rositsa}
+
+This paper discusses the growth mechanism of 3C SiC used at LiU. It describes the experimental details of the growth chamber and conditions. It further discusses how the growth occurs from a physical point of view. It also discusses how it was concluded experimentally that the grown material is of good quality. 
+
+The article states that 4H and 6H polytypes are commercially available, and that these materials are grown using PVD. The polytype 3C cannot be fabricated in the same way, since there are no \emph{seeds} available for this [9]. (The reference [9] describes how 4H and 6H is fabricated using PVD, where to get large volumes of single crystal SiC one uses seeds, small pieces of single crystal SiC).
+
+The material SiC in general is stated as a good candidate for medium power devices, solar cells, bio-compatible material, see refs in paper. 
+
+3C can in principle be created on a Si layer [10], but when this is done the quality of the fabricated material is bad [11]. A better candidate for the fabrication of 3C is $\alpha$-SiC. This is because $\alpha$-SiC has several properties which are similar to 3C. These are lattice parameter, thermal expansion coefficient and chemical compatibility (what is this?). 
+
+3C is in this article created on off-axis $\alpha$-SiC. The substrate is cut not exactly at a crystal face. This means that there will be several steps in the substrate. This is good because the cubic material is then grown along the direction of the steps, called the step-flow direction. The 3C nucleates at one side of the sample in small islands. These are then extended to meet each other and then the step-flow growth begins. As the nucleation sites meet, the crystal orientation may not match and we get defects called \emph{double position boundaries}[12]. 
+
+At the beginning of the growth a large terrace of 4H is created on the substrate. It is on this terrace that the 3C is formed. 
+
+Using PL one can deduce the quality of the grown material. We can also get information about stress from the phonon replica lines. 
+
+\newpage
+\section*{Stability Of Bulk Cubic Silicon Carbide (3C-SiC) On
+Off Oriented Hexagonal Silicon (4H-SiC) Substrate (Exjobb)}
+\emph{Po-Hsun Chen}
+
+There are several factors which influence the growth rate: Supersaturation level (what is this?), Si/C-ratio and type of substrate are some [8].
+
+The growth rate of CVD is much slower than for fast sublimation growth process (FSGP). The rates are 10 $\mu$m/h and 1 mm/h respectively. The FSGP works by having a temperature gradient, where the substrate is cooler than the source. Since there are many carbon components in the setup, for example the crucible, we will get graphitisation of the sample unless we do something about this. To avoid this we use a Ta-foil in the setup, which will adsorb some carbon. The FSGP uses dynamic vacuum, which means that the pump is turned on during the growth process. 
+
+The paper discusses temperature dependence on result. When increasing the temperature we get more step bunching. 
+
+\newpage
+\section*{Application of LTPL Investigation Methods to CVD-Grown SiC}
+\emph{Jean Camassel, Sandrine Juillaguet, Marin Zielinski, and Carole Balloud}
+
+This article describes two ways of finding the concentration of donor atoms in SiC. The two ways originate from the carrier-rate equation for semiconductors, which shows that the change in number of carriers depends on the generation rate, the carrier life times for both free and bound excitons (See paper for details). 
+
+\[\frac{\mathrm{d}n_{\mathrm{FE}}}{\mathrm{d}t}  = g_{\mathrm{FE}}-\left(\frac{1}{\tau^r_{\mathrm{FE}}}+\frac{1}{\tau^{nr}_{\mathrm{FE}}}\right)n_{\mathrm{FE}}-t_{\mathrm{RX}}\]
+
+The fact that we look at excitons and not free EHP-transitions is because at very low temperatures the excitonic recombinations are the most intense. The first method uses the ratio of the emission intensities of free and donor-bound excitons. In the paper they show that there will be a linear dependence between the ratio and the donor concentration, [N]:
+
+\[\frac{I_{\mathrm{DX}}}{I_{\mathrm{FE}}}=K\times [N]\]
+
+This method works well for 4H and 6H samples, but less well for 3C. This is because the FE-line is rarely visible in 3C due to the long lifetime of free excitons. The second method is then better, where we use a standard curve of the FWHM value of the TA-line. 
+
+\newpage
+\section*{Combined effects of Ga, N, and Al codoping in solution grown 3C–SiC}
+\emph{Sun, J. W.
+Zoulis, G.
+Lorenzzi, J. C.
+Jegenyes, N.
+Peyre, H.
+Juillaguet, S.
+Souliere, V.
+Milesi, F.
+Ferro, G.
+Camassel, J.}
+
+This paper deals with the estimation of de acceptor concentration levels in 3C SiC, using the method outlined in Camassel et. al. 
+
+The 3C crystals have a wurtzite (ZnS) structure. Nitrogen is a common donor material, which has a binding energy of 54 meV [12]. Common acceptors are B, Al, Ga, In. A few of these, particularly Al, can frequently be found in SiC as unintentional dopant. This is because graphite is commonly used in the setup when fabricating SiC, and graphite usually contains some Al. 
+
+If we assume that we have two different types of acceptors, 1 and 2, then the ration between the concentrations can be found in a similar way as in Camassel et. al. 
+
+\[\frac{I(DAP_1)}{I(DAP_2)} = \frac{[A_1]R^{\tau}(DAP_1)}{[A_2]R^{\tau}(DAP_2)}\]
+
+Here the ratio between the radiative and non-radiative lifetimes of the excitons have been taken into account through the R$^{\tau}$. In the paper this ratio has been approximated to be approximately 10. However the paper then states that the above formula is not enough to properly find the concentration ratio. We need also to take into account the effective radius of the acceptor atoms when capturing a carrier. It is of course so that if the radius is large, then it will be easier for that acceptor to capture an exciton and this will thus increase the emission from that acceptor. The radius depends on the binding energy of that acceptor, which is found by Haynes rule. See paper for details. 
+
+The paper concludes by stating that the method still does not account for everything in the process, but that the approximation is good. 
+
+\newpage
+\section*{Considerably long carrier lifetimes in high- quality 3C-SiC ( 111 )}
+\emph{Sun, Jianwu
+Ivanov, Ivan Gueorguiev
+Liljedahl, Rickard
+Yakimova, Rositsa
+Syväjärvi, Mikael}
+
+The paper shows that the life time of carriers in the grown 3C is high, 8.2 $\mu$s. It further shows that the grown material is of very high quality and that there is very little strain in the material. 
+
+The paper uses XRD and $\omega$ rocking curves to find the lattice constant. Comparing this constant to table values for 3C it is shown that the strain in the crystal is very low. One can also use the ratio of $I_{\mathrm{LA}}/I_{\mathrm{TO}}$ to estimate the stress. If this ratio is near unity, then the stress is small. 
+
+The life times are estimated using the photoconductive decay method (PCD). The method used uses microwave pulses, $\mu$-PCD. Using the data from the PCD measurements, the effective life time of the carriers can be found. The carrier lifetime is generally lower near the surface of the sample, and near the interface of the substrate and the sample. The bulk lifetime is larger, giving a total effective lifetime somewhere in between the different values. 
+
+It is not much discussed in the article, but if we can see the higher excitonic complexes in the PL spectrum, then this indicates a high lifetime and thus a pure sample. The excitonic complexes are usually denoted with $\alpha_i$ and the excitons with excited electrons are denoted $\beta_i$. Ref [28] discusses this in more detail. 
+
+Higher injection rate of carriers usually means higher surface recombination and this shorter lifetime near the surface. This is because the band is bent near the surface, separating the electrons and holes, but if we increase the carrier injection rate the band is straightened. 
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
