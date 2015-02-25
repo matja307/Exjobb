@@ -16,6 +16,7 @@
 %\usepackage[demo]{graphicx}
 \usepackage{caption}
 \usepackage{subcaption}
+\usepackage{cite}
 
 
 
@@ -27,11 +28,18 @@
 \addto\captionsswedish{%
   \renewcommand{\figurename}{Figure}%
   \renewcommand{\tablename}{Table}%
+    \renewcommand{\contentsname}{Table of contents}%
 }
 
 \begin{document}
 
-\section*{Lateral Enlargement Growth Mechanism of 3C-SiC on Off-Oriented 4H-SiC Substrates}
+\newpage
+\pagenumbering{gobble}
+\tableofcontents
+
+ \newpage
+\pagenumbering{arabic}
+\section{Lateral Enlargement Growth Mechanism of 3C-SiC on Off-Oriented 4H-SiC Substrates}
 \emph{Jokubavicius, Valdas
 Yazdi, G Reza
 Liljedahl, Rickard
@@ -53,7 +61,7 @@ At the beginning of the growth a large terrace of 4H is created on the substrate
 Using PL one can deduce the quality of the grown material. We can also get information about stress from the phonon replica lines. 
 
 \newpage
-\section*{Stability Of Bulk Cubic Silicon Carbide (3C-SiC) On
+\section{Stability Of Bulk Cubic Silicon Carbide (3C-SiC) On
 Off Oriented Hexagonal Silicon (4H-SiC) Substrate (Exjobb)}
 \emph{Po-Hsun Chen}
 
@@ -64,7 +72,7 @@ The growth rate of CVD is much slower than for fast sublimation growth process (
 The paper discusses temperature dependence on result. When increasing the temperature we get more step bunching. 
 
 \newpage
-\section*{Application of LTPL Investigation Methods to CVD-Grown SiC}
+\section{Application of LTPL Investigation Methods to CVD-Grown SiC}
 \emph{Jean Camassel, Sandrine Juillaguet, Marin Zielinski, and Carole Balloud}
 
 This article describes two ways of finding the concentration of donor atoms in SiC. The two ways originate from the carrier-rate equation for semiconductors, which shows that the change in number of carriers depends on the generation rate, the carrier life times for both free and bound excitons (See paper for details). 
@@ -78,7 +86,7 @@ The fact that we look at excitons and not free EHP-transitions is because at ver
 This method works well for 4H and 6H samples, but less well for 3C. This is because the FE-line is rarely visible in 3C due to the long lifetime of free excitons. The second method is then better, where we use a standard curve of the FWHM value of the TA-line. 
 
 \newpage
-\section*{Combined effects of Ga, N, and Al codoping in solution grown 3CÐSiC}
+\section{Combined effects of Ga, N, and Al codoping in solution grown 3CÐSiC}
 \emph{Sun, J. W.
 Zoulis, G.
 Lorenzzi, J. C.
@@ -103,7 +111,7 @@ Here the ratio between the radiative and non-radiative lifetimes of the excitons
 The paper concludes by stating that the method still does not account for everything in the process, but that the approximation is good. 
 
 \newpage
-\section*{Considerably long carrier lifetimes in high- quality 3C-SiC ( 111 )}
+\section{Considerably long carrier lifetimes in high- quality 3C-SiC ( 111 )}
 \emph{Sun, Jianwu
 Ivanov, Ivan Gueorguiev
 Liljedahl, Rickard
@@ -121,13 +129,13 @@ It is not much discussed in the article, but if we can see the higher excitonic 
 Higher injection rate of carriers usually means higher surface recombination and this shorter lifetime near the surface. This is because the band is bent near the surface, separating the electrons and holes, but if we increase the carrier injection rate the band is straightened. 
 
 \newpage
-\section*{Wikipedia on water splitting}
+\section{Wikipedia on water splitting}
 
 Water splitting is one way to realise a \emph{hydrogen economy}, where hydrogen is used as an energy source for powering motors or as local storage of energy. This energy can be stored in e.g. buildings as a source of energy for that particular building. The term hydrogen economy was coined by John Bockris in the 70s. 
 
 In water splitting, water is split using electrolysis. This means that a current is passed through the water. This is explained in more detail in later papers, see below. 
 
-\section*{Photoelectrolysis of water to hydrogen in in p-SiC/Pt and p-SiC/n-TiO2 cells}
+\section{Photoelectrolysis of water to hydrogen in in p-SiC/Pt and p-SiC/n-TiO2 cells}
 \emph{Akikusa, Jun
 Khan, Shahed U M}
 
@@ -138,12 +146,12 @@ A problem when using n-doped material as electrode is the photocorrosion, which 
 How is this done? The SiC is oxidized in combination with the water, so that SiO and SiO$_2$ is formed? Or is it simply that the holes make the Si and C split?
 
 \newpage
-\section*{Semiconductor-based Photocatalytic Hydrogen Generation}
+\section{Semiconductor-based Photocatalytic Hydrogen Generation}
 \emph{Xiaobo Chen, Shaohua Shen, Liejin Guo, and Samuel S. Mao}
 
 The concept of water splitting is not new. Using UV-light to split water has been done for some time. But since the UV part of the solar spectrum is only 4 \%, it is better if we can use the visible (VIS) part of the spectrum. A classical example from ref [18] is using TiO$_2$ and Pt electrodes. 
 
-The process is that the incident light is absorbed and an ehp is created. This ehp is split due to a built in electric field in the electrode. (This electric field is due to the different potentials at the two ends of the electrode. The end which is connected to the other cathode has the same potential as the CB of that electrode, while the end which is in contact with the water has the potential intrinsic to SiC). The holes travel from the anode to the water, oxidicing the water: 
+The process is that the incident light is absorbed and an ehp is created. This ehp is split due to a built in electric field in the electrode. (This electric field is due to the different potentials at the two ends of the electrode. The end which is connected to the other cathode has the same potential as the CB of that electrode, while the end which is in contact with the water has the potential intrinsic to SiC. This is to keep the fermi energy constant over the interfaces). The holes travel from the anode to the water, oxidicing the water: 
 
 \[2H_2O + 4h^+ \rightarrow 4H^+ + O_2.\]
 
@@ -153,7 +161,7 @@ The electrons from the ehp travel from the anode to the cathode, where they inte
 
 and the hydrogen gas can be collected. The process of creating oxygen and hydrogen gas from water requires an addition of energy corresponding to 1.23 eV per hydrogen molecule created. This is due to the change in Gibbs free energy before and after the reaction. This means that the minimum band gap of the electrode where the ehp are created is 1.23 eV. 
 
-Another requirement of the system is that the semiconductor band energies are compatible with the electrochemical potentials of the water reduction and oxidation. In the NHE (normal hydrogen electrode) reference system, the reduction potential is 0 V. (This corresponds to the energy -4.5 eV relative the vacuum energy of the semiconductor band diagram.) Correspondingly the oxidation energy is 
+Another requirement of the system is that the semiconductor band energies are compatible with the electrochemical potentials of the water reduction and oxidation. In the NHE (normal hydrogen electrode) reference system, the reduction potential is 0 V. (This corresponds to the energy -4.5 eV relative the vacuum energy of the semiconductor band diagram. Cite Bard, Faulkner: Electrochemical methods - fundamentals and applications) Correspondingly the oxidation energy is 
 
 \[-4.5 - 1.23 = -5.63 \,\, \mathrm{eV}\]
 
@@ -169,9 +177,42 @@ There are two problems that occur in these types of electrochemical cells. The f
 \item Reflectivity of the electrode. 
 \end{itemize}
 
+\newpage
+\section{VR-application}
+\emph{Jianwu Sun}
+
+The device used for water splitting is called an electrochemical cell. The idea is to use hydrogen as an energy source. This is promising because hydrogen has a very high energy density, even higher than that of gasoline (five times higher). 
+
+Some important parameters to explore are: Carrier lifetime and transport properties, doping concentrations and their influences, Relation between pH and photocorrosion, best candidates for the cathode metal. Also the photocorrosion depending on doping needs to be investigated. The thought is that p-doped material will be better to resist corrosion. 
+
+In ref. [8] they predict that the theoretical maximum efficiency fšr this type of structure is 16.8 \%. 
+
+Some carrier equations that might come in useful: 
+
+\[L_D = \sqrt{D\tau_R}\]
+\[D = kT\mu/e\]
+
+where L$_D$ is the diffusion lenght, $\tau_R$ is the carrier life time and D is the diffusion coefficient. 
+
+\newpage
+\section{Epitaxial p-type SiC as a self-driven photocathode for water splitting}
+\emph{Kato, Masashi
+Yasuda, Tomonari
+Miyake, Keiko
+Ichimura, Masaya
+Hatayama, Tomoaki}
+
+The currently highest reported efficiency of 3C SiC for water splitting is 0.38 \%. 
+
+The Faraday efficiency is an important concept. It is the fraction of ehp:s that actually contribute to the extracted gas. Some carriers may be lost along the way, for example in creating other substances at the electrodes, or in surface back reaction where created hydrogen and oxygen gas recombine. 
+
+The article states that dopant concentrations have been measured using C/V measurements, but it does not state how this has been done. \cite{Nobody06}
 
 
 
+
+\bibliography{tst2-1}{}
+\bibliographystyle{plain}
 
 
 \end{document}
