@@ -1,0 +1,145 @@
+\documentclass[a4paper,10pt,english,ifm]{liuthesis}
+%\documentclass[a4paper,10pt,english,ifm,crop]{liuthesis}
+
+% There are a number of options to the LaTeX class liuthesis.  The
+% most useful ones are listed below.
+%
+% a4paper --- use a4 paper (thesis in s5 format centered on a4)
+% english --- language English
+% swedish --- language Swedish (if someone ever uses it)
+% crop    --- crop marks to show actual size.  REMOVE BEFORE PRINTING!
+% ifm     --- department specifics
+% pdf     --- if to use with PDF-LaTeX (all figures as jpg or pdf)
+%
+% If using LaTeX, i.e., creating a dvi-file, use the following command
+% to convert to ps in order to get a proper pdf afterwards
+%   dvips -t a4 -Ppdf file.dvi -o
+
+
+
+
+% ====================================================================
+% Included packages --------------------------------------------------
+% ====================================================================
+\usepackage[T1]{fontenc}
+\usepackage[bitstream-charter]{mathdesign}
+
+% Use the following command to get clickable references in your
+% pdf-files.  Nb, it has to be put after all \usepackage-commands in
+% order to work properly!
+\useHyperRef
+
+% ====================================================================
+% Definitions required for the thesis --------------------------------
+% ====================================================================
+
+% Declare that this is a Master's thesis.
+\thesisCategory{MSc}
+
+\author{Mattias Jansson}
+
+% Title, both Swedish and English titles required.
+\title{Svensk titel}
+{English title}
+
+% Date of presentation.  N.b. format is month, day, year!!!
+\thesisDate{01}{01}{2015}
+
+% Thesis ISRN number.
+\ISRN{LiTH-IFM-EX-XXXX}
+
+% Division at which the thesis was carried out, e.g., Computational
+% Physics.
+\thesisDivision{Semiconductor physics}
+
+% Name of the examiner and where he's employed.  Several examiners
+% can be specified by using the command \AND and list them.
+\examiner{Mikael Syväjärvi \AT Department of Physics, Chemistry and Biology}
+
+% Name of the supervisor/advisor and where he's employed.  Several
+% examiners % can be specified by using the command \AND and list
+% them.
+\supervisor{Jianwu Sun \AT Department of Physics, Chemistry and Biology}
+
+% Subject of the thesis, e.g., Computational Physics.
+\subject{Thesis subject}
+
+% What keywords to be put on the library page
+\keywords{Put your keywords here}
+
+% URL for electronic publishing, if there is any.  Two URLs can be
+% specified, the primary one given in {} and the one in [] is
+% optional.
+\URL[]{}
+
+% If there is anyone you want to dedicate the thesis to, e.g.,
+% girlfriend/boyfriend, husband/wife, etc., or any other wise things
+% you want to have on a page in the beginning is written here.  If you
+% don't want anything, remove this statement completely, otherwise it
+% won't work!!!
+\dedication{\Large Dedication section is pointless.}
+
+% Import file containing your abstract.
+\input{chapters/abstract}
+
+% Import file containing your acknowledgements.
+\input{chapters/acknow}
+
+
+% ====================================================================
+% Begining of actual document ----------------------------------------
+% ====================================================================
+
+\begin{document}
+
+% Create all interesting things you want in the beginning of your
+% document;  Front page, title page, library page, dedication (if
+% there is one), abstract, acknowledgements, and Table of Contents.
+\makeFrontMatter
+
+
+% ====================================================================
+% Main content -------------------------------------------------------
+% ====================================================================
+
+% Start writing your text here.  For clarity it's advisable that you
+% write each chapter in a separate file and include them here using
+% \include{}.
+
+%\chapter{Test}
+%Afonso was born at 13:35 on 23 February 1845 in the Palace of São Cristóvão, in Rio de Janeiro, Brazil.[1][2] He was %named after his ancestor Afonso, Duke of Braganza, son of King João I of Portugal and founder of the House of Braganza %(Portuguese: Bragança).[3] His full name was Afonso Pedro de Alcântara Cristiano Leopoldo Filipe Eugênio Miguel Gabriel %Rafael Gonzaga.[1] Through his father, Emperor Pedro II, he was a member of the Brazilian branch of the House of %Braganza (Portuguese: Bragança) and was referred to using the honorific "Dom" (Lord) from birth.[4] Afonso was the %grandson of Emperor Pedro I of Brazil and nephew of Queen Maria II of Portugal.[5] Through his mother, Teresa Cristina, %he was a grandson of Francis I and nephew to Ferdinand II, who ruled as kings of the Two Sicilies in turn.[6]
+
+%
+\include{chapters/introduction}
+\include{chapters/growth}
+\include{chapters/characterization}
+%\subsection{Nomarski microscopy}
+%\subsection{Photoluminescence spectroscopy}
+	\include{chapters/absorption}
+%\subsection{Hydrogen generation measurements}
+\include{chapters/experimental}
+\include{chapters/results}
+\include{chapters/discussion}
+\include{chapters/conclusion}
+\include{chapters/future}
+
+
+% ====================================================================
+% Bibliography -------------------------------------------------------
+% ====================================================================
+
+% \bibliographystyle{plain}
+% \bibliography{}
+% \cleardoublepage
+
+% ====================================================================
+% Appendices ---------------------------------------------------------
+% ====================================================================
+
+%\appendix
+
+% ====================================================================
+% All done -----------------------------------------------------------
+% ====================================================================
+
+\end{document}

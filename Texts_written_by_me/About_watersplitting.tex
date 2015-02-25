@@ -1,0 +1,102 @@
+% !TEX encoding = MacOSRoman
+
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{listings}
+\usepackage[parfill]{parskip}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage[swedish]{babel}
+\usepackage[applemac]{inputenc}
+\usepackage[margin=35mm]{geometry}
+\usepackage{fancyhdr}
+\usepackage[encapsulated]{CJK}
+\usepackage{inconsolata}
+\usepackage{amssymb,amsmath}
+%\usepackage[demo]{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+
+
+
+\newenvironment{ppl}{\fontfamily{ppl}\selectfont}{}
+\newenvironment{inconsolata}{\texttt}{}
+
+
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+\addto\captionsswedish{%
+  \renewcommand{\figurename}{Figure}%
+  \renewcommand{\tablename}{Table}%
+    \renewcommand{\contentsname}{Table of contents}%
+}
+
+\begin{document}
+The concept of water splitting is not new. Using UV-light to split water has been done for some time. But since the UV part of the solar spectrum is only 4 \%, it is better if we can use the visible (VIS) part of the spectrum. 
+
+The process is that the incident light is absorbed and an ehp is created. This ehp is split due to a built in electric field in the electrode. (This electric field is due to the different potentials at the two ends of the electrode. This is to keep the fermi energy constant over the interfaces). The holes travel from the anode to the water, oxidicing the water: 
+
+\[2H_2O + 4h^+ \rightarrow 4H^+ + O_2.\]
+
+The electrons from the ehp travel from the anode to the cathode, where they interact with the hydrogen ions
+
+\[4H^+ + 4e^- \rightarrow 2H_2\]
+
+and the hydrogen gas can be collected. The process of creating oxygen and hydrogen gas from water requires an addition of energy corresponding to 1.23 eV per hydrogen molecule created. This is due to the change in Gibbs free energy before and after the reaction. This means that the minimum band gap of the electrode where the ehp:s are created is 1.23 eV. 
+
+Another requirement of the system is that the semiconductor band energies are compatible with the electrochemical potentials of the water reduction and oxidation. In the NHE (normal hydrogen electrode) reference system, the reduction potential is 0 V. This corresponds to the energy -4.5 eV relative the vacuum energy of the semiconductor band diagram. Correspondingly the oxidation energy is 
+
+\[-4.5 - 1.23 = -5.63 \,\, \mathrm{eV}\]
+
+Both these energies must lie within the band gap of the electrode semiconductor. 
+
+There are two problems that occur in these types of electrochemical cells. The first one is photocorrosion of the electrode. The second one is recombination of O$_2$ and H$_2$ into water, a process called surface back reaction. There are other properties which affect the photocatalytic generation too: 
+
+\begin{itemize}
+\item Overpotentials
+\item Charge separation
+\item Mobility of carriers
+\item Life time of carriers
+\item Reflectivity of the electrode. 
+\end{itemize}
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

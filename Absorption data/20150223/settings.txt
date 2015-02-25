@@ -1,0 +1,12 @@
+method/uvwinlab/meth900/zaifei.msc
+
+Data interval  5nm
+
+
+UV/Vis
+integration time 0,52s  slit mode: slit 2nm
+
+
+NIR
+
+integration time 0,52s
