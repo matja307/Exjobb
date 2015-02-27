@@ -22,6 +22,7 @@
 
 
 
+
 \begin{document}
 \selectlanguage{english}
 \makeFrontPage
@@ -37,20 +38,38 @@
 %\include{notation}
 
 \mainmatter
-\include{chapters/introduction}
 
-%About SiC...
-\include{chapters/growth}
-\include{chapters/characterization}
-%\subsection{Nomarski microscopy}
-%\subsection{Photoluminescence spectroscopy}
-	\include{chapters/absorption}
-%\subsection{Hydrogen generation measurements}
-\include{chapters/experimental}
-\include{chapters/results}
-\include{chapters/discussion}
-\include{chapters/conclusion}
-\include{chapters/future}
+\include{chapters/introduction}
+\label{sec:introduction}
+
+\input{chapters/sic}
+\label{sec:sic}
+
+\input{chapters/growth}
+\label{sec:growth}
+
+\input{chapters/characterization}
+\label{sec:characterization}
+	%\subsection{Nomarski microscopy}
+	%\subsection{Photoluminescence spectroscopy}
+	\input{chapters/absorption}
+	\label{sec:absorption}
+	%\subsection{Hydrogen generation measurements}
+	
+\input{chapters/experimental}
+\label{sec:experimental}
+
+\input{chapters/results}
+\label{sec:results}
+
+\input{chapters/discussion}
+\label{sec:discussion}
+
+\input{chapters/conclusion}
+\label{sec:conclusion}
+
+\input{chapters/future}
+\label{sec:future}
 
 %\include{introduktion}
 %\include{resultat}
@@ -63,8 +82,9 @@
 
 
 \backmatter
+\small
 %\bibliographystyle{plain}
-\bibliography{tst,tst2}
+\bibliography{BibTeX/Cite-General,BibTeX/Cite-Growth,BibTeX/Cite-PL,BibTeX/Cite-Solar,BibTeX/Cite-Watersplitting}
 \printindex
 
 

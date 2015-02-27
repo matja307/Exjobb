@@ -594,7 +594,7 @@
 \newlength{\rt@parskip}
 \newlength{\rt@parindent}
 \setlength{\rt@parskip}{\parskip}
-\setlength{\rt@parindent}{\parindent}
+\setlength{\rt@parindent}{25pt}
 
 %%% We now load packages that must be loaded before hyperref.
 %%% It would be possible to load these packages only when hyperref is requested, but this would make the use of the hyperref class option (to be introduced soon) confusing.
