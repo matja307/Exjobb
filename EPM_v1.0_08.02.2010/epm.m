@@ -8,14 +8,13 @@
 % Phys. Rev. 141, 2, p. 556, 1966.
 
 clear;
-tic
 T=[1/8 1/8 1/8];   %Structure factor
 %Start generating Brillouin zone vectors
 n=(5^3)-1 ;
 i=1;
 %steps_relative = [2 1 3 2];
 steps_relative = [2 1 2 2];
-resolution = 10;
+resolution = 50;
 steps = steps_relative*resolution;
 
 k_start = [0 0 0]; %Gamma
@@ -48,7 +47,6 @@ if gamma_endpoint == 0
     gamma = [0 0 0];
 end;
 for i = 1:4
-    
     k_end = endpoints(i,:); %Save end point for current path
     k_step = [(k_end(1)-k_current(1))/steps(i) (k_end(2)-k_current(2))/steps(i) (k_end(3)-k_current(3))/steps(i)]; %Step vector for current path
     for m = 0:steps(i)-1
@@ -80,12 +78,15 @@ energy = zeros(length(k_vectors),H_matrix_size);
 ctr = 0; %For percentage display
 
 for k_iterator=1:number_of_vectors %Iterate through the k-vectors (move through the B-zone
-    
+    if k_iterator == 1
+        tic;
+    end;
+%    display('New k-point');
     k=k_vectors(:,k_iterator);  
     H_matrix = zeros(H_matrix_size,H_matrix_size);
     
     %Display stuff
-    done = k_iterator/41;
+    done = k_iterator/number_of_vectors;
     if done>0.9 && ctr<90
        display('90 %');
        ctr = 90;
@@ -118,6 +119,7 @@ for k_iterator=1:number_of_vectors %Iterate through the k-vectors (move through 
         ctr = 10;
     end
          
+    %display('Start creating H');
     for i=-H_matrix_half_size:1:H_matrix_half_size %For each point i B-zone (each k), evaluate hamiltonian matrix. 
         for j=-H_matrix_half_size:1:H_matrix_half_size
             
@@ -139,14 +141,21 @@ for k_iterator=1:number_of_vectors %Iterate through the k-vectors (move through 
 
     end;
 
+%    display('Get eigenvalues');
     energy(k_iterator,:) = eig(H_matrix);
     %eval(['energy' num2str(k_iterator) '=eig(H_matrix)';]);
+    
+    if k_iterator == 1
+        time_per_iteration = toc;
+        time_min = ceil(time_per_iteration*number_of_vectors/60);
+        disp(['Estimated time = ' num2str(time_min) 'min.'])
+    end
 
 end;
 
 
 
-
+display('Figure');
 fig=figure;
 hax=axes;
 for energy_level_iterator = 1:8
@@ -168,6 +177,5 @@ for energy_level_iterator = 1:8
     line([SP3 SP3],get(hax,'YLim'),'Color',[0 0 0])
 end;
 hold off;
-toc
 
 
