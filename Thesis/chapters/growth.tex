@@ -15,18 +15,19 @@
 	%Contacts
 	
 
-SiC can be fabricated by several different techniques, and the different techniques are advantageous for different polytypes and applications. Some of the most common methods are \emph{sublimation epitaxy}, \emph{liquid phase epitaxy (LPE)}, \emph{chemical vapour deposition (CVD)} and \emph{physical vapour deposition (PVD)} \cite{Ivanov1999}. 
+SiC can be fabricated by several different techniques, and the different techniques are advantageous for different polytypes and applications. Some of the most common methods are \emph{sublimation epitaxy}, \emph{liquid phase epitaxy (LPE)}, \emph{chemical vapour deposition (CVD)} and \emph{physical vapour transport (PVT)} \cite{Ivanov1999}. 
 
-The goal when growing freestanding material is to have high quality material of large volume. Up to this point in time, researchers have had more success fabricating high quality 4H and 6H material compared to 3C \cite{J.B.CASADYandR.W.JOHNSON1996}. The hexagonal polytypes are commonly fabricated using PVD. This method has not been widely adapted to 3C growth however, which is often attributed to the fact that this method uses homoepitaxy, and there are no 3C seeds widely available. Historically in the growth of 3C using CVD, there has been a trade-off between crystal quality and growth rate. Nishino et al. reported in 1983 a growth rate of approximately 2.5 microns per hour with the CVD technique for 3C growth \cite{Nishino1983}. This rate is much too low to create free standing material. The growth rate for CVD growth has been improved since this time, and in 2002 Nagasawa et al. reported a rate of 40 $\mu$m/h \cite{Nagasawa2002}, which makes it possible to fabricate free standing 3C. 
+The goal when growing freestanding material is to have high quality material of large enough thickness to allow the substrate and transition layer to be polished away. Up to this point in time, researchers have had more success fabricating high quality 4H and 6H material compared to 3C \cite{J.B.CASADYandR.W.JOHNSON1996}. The hexagonal polytypes are commonly fabricated using PVT. This method has not been widely adapted to 3C growth however, which is often attributed to the fact that this method uses homoepitaxy, and there are no 3C seeds widely available. Nishino et al. reported in 1983 a growth rate of approximately 2.5 microns per hour with the CVD technique for 3C growth \cite{Nishino1983}. This rate is much too low to create free standing material. The growth rate for CVD growth has been improved since this time, and in 2002 Nagasawa et al. reported a rate of 40 $\mu$m/h \cite{Nagasawa2002}, which makes it possible to fabricate free standing 3C. 
 
-Another growth method is sublimation epitaxy, which was demonstrated by Lely in 1955 \cite{Lely1955}. In this method material is transferred between a source material and a substrate using sublimation. Recently there have been reports of high quality cubic SiC fabricated by a type of sublimation epitaxy called \emph{fast sublimation growth process (FSGP)}. Growth rates as high as 500 $\mu$m/h have been reported using this method, while still growing good quality material \cite{Jokubavicius2014}. This high growth rate is obviously ideal for growth of free standing (and even bulk) material. This chapter describes in detail the sublimation method in general and FSGP in particular. FSGP is the method used to obtain the results in this thesis. 
+Another growth method is sublimation epitaxy, which was demonstrated by Lely in 1955 \cite{Lely1955}. In this method material is transferred between a source material and a substrate using sublimation. Recently there have been reports of high quality cubic SiC fabricated by sublimation growth. Growth rates as high as 500 $\mu$m/h have been reported using this method, while still growing good quality material \cite{Jokubavicius2014}. This high growth rate is obviously ideal for growth of free standing (and even bulk) material. This chapter describes in detail the sublimation method in general and more details about the setup used in this work. 
  
  \section{About sublimation and nucleation}
+ \label{sec:growth:sub_nuc}
  % What is sublimation, how does it work?
  % What governs the process?
  Sublimation is the phase transition where a material transitions between solid and gas, without the intermediate liquid phase. At normal conditions SiC does not melt, but rather it sublimes. For SiC to melt a pressure of 100,000 atm and a temperature of at least 3200 $^\circ$C is required - at atmospheric pressure SiC can only sublime \cite{Scheel2003}. Sublimation of a SiC source material will give a vapour consisting of different molecules consisting of silicon and carbon, for example $\mathrm{Si, Si_2C, SiC_2}$ etc. The composition and vapour pressure of the gas can be controlled using parameters such as temperature and pressure of the ambient. 
  
-If a substrate is placed in the silicon-carbon vapour, some of the material will be adsorbed on the surface of the substrate, in the form of \emph{adatoms}. When many such atoms are adsorbed at the surface they bind together, forming a \emph{nucleus} of crystal growth. In a sublimation growth setup, a source of SiC is heated, initiating the sublimation. The vapour then travels to an appropriate substrate, by the means of a heat gradient. Material is adsorbed on the substrate which forms the grown crystal. Figure \ref{fig:sublimation} shows a schematic of this process. 
+If a substrate is placed in the silicon-carbon vapour, some of the material will be adsorbed on the surface of the substrate, in the form of \emph{adatoms}. When many such atoms are adsorbed at the surface they bind together, forming a \emph{nucleus} of crystal growth. In a sublimation growth setup, a source of SiC is heated, initiating the sublimation. The vapour then travels to an appropriate substrate, by the means of a heat gradient. Material is adsorbed on the substrate which forms the grown crystal. Figure \ref{fig:sublimation} shows a schematic of this process. The vapour is transported from the source to the substrate against the temperature gradient. The higher temperature is at the source. 
 
 \begin{figure}[h]
 \begin{center}
@@ -38,9 +39,9 @@ If a substrate is placed in the silicon-carbon vapour, some of the material will
  
  As the material is adsorbed at the substrate the growth begins. The crystal growth is governed by the free energy of the whole system. A decrease in free energy works to promote the growth. In crystal growth, a decrease in free energy is an increase in chemical potential $\mu$, meaning that crystal growth is driven by an increase in chemical potential. The system is made up by the vapour and the crystal phases, hence a change in chemical potential is given by 
  \[\Delta \mu = \mu_v -\mu_c,\]
-where $\mu_v$ is the chemical potential for the vapour and $\mu_c$ is for the crystal. For growth from vapour phase, the chemical potential difference between vapour and crystal is dependent on the \emph{vapour pressure} and the \emph{saturated vapour pressure} through the formula
+where $\mu_v$ is the chemical potential for the vapour and $\mu_c$ is for the crystal. For growth from vapour phase, the chemical potential difference between vapour and crystal is dependent on the \emph{partial vapour pressure} and the \emph{equilibrium vapour pressure} through the formula
  \[\Delta \mu = k_BT\log(p/p_e),\]
-where p is the vapour pressure and p$_e$ is the saturated counterpart. Defining the \emph{supersaturation}, $\sigma$, as
+where p is the partial vapour pressure and p$_e$ is the equilibrium (or saturated) counterpart. Defining the \emph{supersaturation}, $\sigma$, as
 \[\sigma = \frac{p-p_e}{p_e}\]
 thus
  \[\Delta \mu = k_BT\log(\sigma+1).\]
@@ -60,15 +61,16 @@ Taking the first order Taylor expansion this becomes
  
  Figure \ref{fig:supersaturation} shows the general relationship between the growth rate (R) and the supersaturation ($\sigma$). It should be noted that at a certain value of $\sigma$ the growth rate of 2D growth is higher than that of spiral growth. At $\sigma$ higher than this value the 2D growth will dominate over spiral growth. 
  
-\section{The fast sublimation growth process}
-The fast sublimation growth process is setup as shown in figure \ref{fig:fsgp_setup}. An insulating graphite foam is placed inside a quartz tube, which is surrounded by a copper coil (shown as a cutaway in the figure). The copper coil is connected to an RF-generator capable of creating a current in the coil. The foam cylinder contains a graphite crucible, which will couple with the magnetic field created by the current in the copper coil. This will heat the crucible. To measure the temperature of the crucible there is a pyrometer fixed above the quartz tube (not shown in the figure), which can measure the temperature of the crucible through a small hole at the top of the insulating foam. 
+\section{The sublimation growth process}
+\label{sec:growth:fsgp}
+The sublimation growth process used in this work is setup as shown in figure \ref{fig:fsgp_setup}. An insulating graphite foam is placed inside a quartz tube, which is surrounded by a copper coil (shown as a cutaway in the figure). The copper coil is connected to an RF-generator capable of creating a current in the coil. The foam cylinder contains a graphite crucible, which will couple with the magnetic field created by the current in the copper coil. This will heat the crucible. To measure the temperature of the crucible there is a pyrometer fixed above the quartz tube (not shown in the figure), which can measure the temperature of the crucible through a small hole at the top of the insulating foam. 
 
 \begin{figure}[h]
 \centering
 \begin{minipage}{.5\textwidth}
   \centering
   \includegraphics[scale=1]{reactor1.pdf}
-  \captionof{figure}{An outside view of the reactor setup of the FSGP method. A copper coil surrounds a quartz tube containing an insulating graphite foam.}
+  \captionof{figure}{An outside view of the reactor setup of the sublimation growht method. A copper coil surrounds a quartz tube containing an insulating graphite foam.}
   \label{fig:fsgp_setup}
 \end{minipage}%
 \begin{minipage}{.5\textwidth}
@@ -79,7 +81,7 @@ The fast sublimation growth process is setup as shown in figure \ref{fig:fsgp_se
 \end{minipage}
 \end{figure}
 
-The graphite crucible contains the components of the sublimation process, as shown in figure \ref{fig:undoped_growth}. At the bottom of the crucible is a source material, which will sublime away during the growth. When growing free standing 3C-SiC, a polycrystalline SiC wafer piece is used as source material. The source and the substrate are separated by a graphite spacer, which is a disc with a hole in it where the vapour can flow freely. The size of the spacer and the hole can be varied depending on the desired size of the grown sample. The substrate can consist of different materials, generally 4H-, 6H-SiC or Si. There is a significant mismatch of the lattice constants and of the thermal expansion coefficients of Si and 3C-SiC. This is not favourable for high quality grown material. It is instead favourable to grow 3C-SiC on one of the hexagonal polytypes of SiC. Wafers if both 4H- and 6H-SiC are commercially available and can thus readily be used as substrates in growth. When the wafers are cut, they can be cut at different angles, i.e. in different crystal planes. It has been shown that cutting along the (0001) plane gives a worse quality of the grown material than cutting slightly off from this plane \cite{Vasiliauskas2012}. Using the FSGP technique it has been shown that the best quality 3C-SiC is grown when using 4$^\circ$ off-axis cut substrate. This means that the cut is made 4$^\circ$ from the (0001) direction towards the <11$\overline{2}$0> direction on a 4H-SiC substrate \cite{Jokubavicius2014}.
+The graphite crucible contains the components of the sublimation process, as shown in figure \ref{fig:undoped_growth}. At the bottom of the crucible is a source material, which will sublime away during the growth. When growing free-standing 3C-SiC, a polycrystalline SiC wafer piece is used as source material. The source and the substrate are separated by a graphite spacer, which is a disc with a hole in it where the vapour can flow freely. The size of the spacer and the hole can be varied depending on the desired size of the grown sample. The substrate can consist of different materials, generally 4H- or 6H-SiC. Wafers if both 4H- and 6H-SiC are commercially available and can thus readily be used as substrates in growth. When the wafers are cut, they can be cut at different angles, i.e. in different crystal planes.
 
 Growing on on-axis substrates will give many nucleation sites. As these sites expand and merge with each other there will be many defects at the interfaces. These defects are called \emph{double positioning boundaries (DBP)}. The off-axis substrates have a surface which contains many shallow steps. As the 3C-SiC has nucleated at the edge of the growth area, the nucleation site will expand laterally along the step-flow direction. This growth method is called \emph{lateral enlargement mechanism}, and is the main principle of FSGP after nucleation has occurred. The density of DPBs are greatly decreased in this manner. This process is described in detail by Jokubavicius et al. \cite{Jokubavicius2014}.
 
@@ -88,6 +90,7 @@ As described earlier in this chapter, the growth temperature and pressure are vi
 For a good quality crystal to form, the proper ratio between silicon and carbon must be present in the vapour. To avoid the problem with excess of carbon, a \emph{carbon getter material} is often used. This is a material which binds carbon from the vapour, thus reducing the C/Si ratio. One such material is tantalum. 
 
 \subsection{Doping using FSGP}
+\label{sec:growth:fsgp:doping}
 It is possible to grow intentionally doped material using the FSGP method. To do this, the pure SiC polycrystalline source is exchanged for a doped source with the appropriate dopant density. The vapour from the sublimation will then contain the dopant element. Figure \ref{fig:direct_doping} shows the crucible setup for growth of doped material. Here the substrate contains a 3C-SiC seed before the growth starts. This is to facilitate cubic growth. 
 
 \begin{figure}[h]
@@ -114,6 +117,9 @@ It is now vital to have the proper ratio between all of the elements in the vapo
 	%Vacuum
 %Doped growth
 	%Indirect doping growth process
+	
+\section{Contact attachment}
+This section will describe how contacts are attached to the samples. 
 
 
 
