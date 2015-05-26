@@ -61,7 +61,9 @@ Taking the first order Taylor expansion this becomes
  
  Figure \ref{fig:supersaturation} shows the general relationship between the growth rate (R) and the supersaturation ($\sigma$). It should be noted that at a certain value of $\sigma$ the growth rate of 2D growth is higher than that of spiral growth. At $\sigma$ higher than this value the 2D growth will dominate over spiral growth. 
  
-\section{The sublimation growth process}
+ The growth model for 3C-SiC on off-axis samples is described in detail by Jokubavicius et al. \cite{Jokubavicius2014}. The model can be divided into three parts. Initially a large terrace region is formed at one edge of the substrate. The terrace is grown homoepitaxially. On this terrace small areas of 3C-SiC are formed, and will eventually merge. Lastly the 3C-SiC grows from the terrace onto the rest of the substrate, in step flow growth. In step flow growth, the steps inherent in off-axis samples are overgrown with 3C-SiC by enlargement of the steps. This is sometimes also called \emph{lateral enlargement}.
+ 
+\section{The sublimation growth setup}
 \label{sec:growth:fsgp}
 The sublimation growth process used in this work is setup as shown in figure \ref{fig:fsgp_setup}. An insulating graphite foam is placed inside a quartz tube, which is surrounded by a copper coil (shown as a cutaway in the figure). The copper coil is connected to an RF-generator capable of creating a current in the coil. The foam cylinder contains a graphite crucible, which will couple with the magnetic field created by the current in the copper coil. This will heat the crucible. To measure the temperature of the crucible there is a pyrometer fixed above the quartz tube (not shown in the figure), which can measure the temperature of the crucible through a small hole at the top of the insulating foam. 
 
@@ -70,7 +72,7 @@ The sublimation growth process used in this work is setup as shown in figure \re
 \begin{minipage}{.5\textwidth}
   \centering
   \includegraphics[scale=1]{reactor1.pdf}
-  \captionof{figure}{An outside view of the reactor setup of the sublimation growht method. A copper coil surrounds a quartz tube containing an insulating graphite foam.}
+  \captionof{figure}{An outside view of the reactor setup of the sublimation growth method. A copper coil surrounds a quartz tube containing an insulating graphite foam.}
   \label{fig:fsgp_setup}
 \end{minipage}%
 \begin{minipage}{.5\textwidth}
@@ -85,7 +87,9 @@ The graphite crucible contains the components of the sublimation process, as sho
 
 Growing on on-axis substrates will give many nucleation sites. As these sites expand and merge with each other there will be many defects at the interfaces. These defects are called \emph{double positioning boundaries (DBP)}. The off-axis substrates have a surface which contains many shallow steps. As the 3C-SiC has nucleated at the edge of the growth area, the nucleation site will expand laterally along the step-flow direction. This growth method is called \emph{lateral enlargement mechanism}, and is the main principle of 3C-SiC sublimation growth, after nucleation has occurred. The density of DPBs are greatly decreased in this manner. This process is described in detail by Jokubavicius et al. \cite{Jokubavicius2014}.
 
-As described earlier in this chapter, the growth temperature and pressure are vital parameters to determine growth rate and thus also crystal quality. In sublimation growth these parameters can easily be controlled during growth. The temperature is controlled by modulating the current from the RF-generator. A temperature ramp up scheme is used to facilitate proper step flow growth. The growth starts by homoepitaxial spiral growth of 4H-SiC on the substrate, until the supersaturation has become large enough for 2D-growth to occur. This is in accordance with figure \ref{fig:supersaturation}. It has been shown that the temperature window for 3C-SiC growth is rather narrow \cite{Vasiliauskas2012}, hence proper control of the temperature is vital for good quality material. Another important parameter is the pressure in the reactor during growth. To avoid inclusions of foreign material in the crystal a low pressure during growth is required. Typically a pressure of $10^{-4}$ to $10^{-5}$ mbar is used, which is achieved with dynamic vacuum. Some nitrogen inclusions will be unavoidable even at these pressures. A residual N-doping in the order of $10^{16}$ cm$^{-3}$ has been shown in material grown under these conditions \cite{Jokubavicius2014}, which can be compared to $10^{22}$ cm$^{-3}$ silicon or carbon atoms in the crystal. 
+As described earlier in this chapter, the growth temperature and pressure are vital parameters to determine growth rate and thus also crystal quality. In sublimation growth these parameters can easily be controlled during growth. The temperature is controlled by modulating the current from the RF-generator. A temperature ramp up scheme is used to facilitate proper step flow growth. The growth starts by homoepitaxial spiral growth of 4H-SiC on the substrate, until the supersaturation has become large enough for 2D-growth to occur. This is in accordance with figure \ref{fig:supersaturation}. It has been shown that the temperature window for 3C-SiC growth is rather narrow \cite{Vasiliauskas2012}, hence proper control of the temperature is vital for good quality material. The temperature ramp up scheme is done in two or three parts. First the temperature is increased by increasing the power from the RF-generator. This is done in intervals of several minutes per 100 W. As the desired temperature is reached, it is held for the desired amount of time. For some samples a third step is added, where after growth for some time at the first temperature level, it is again increased to a higher level and held there for some additional time. These schemes are sometimes called one and two step temperature schemes respectively. 
+
+Another important parameter is the pressure in the reactor during growth. To avoid inclusions of foreign material in the crystal a low pressure during growth is required. Typically a pressure of $10^{-4}$ to $10^{-5}$ mbar is used, which is achieved with dynamic vacuum. Some nitrogen inclusions will be unavoidable even at these pressures. A residual N-doping in the order of $10^{16}$ cm$^{-3}$ has been shown in material grown under these conditions \cite{Jokubavicius2014}, which can be compared to $10^{22}$ cm$^{-3}$ silicon or carbon atoms in the crystal. 
 
 For a good quality crystal to form, the proper ratio between silicon and carbon must be present in the vapour. To avoid the problem with excess of carbon, a \emph{carbon getter material} is often used. This is a material which binds carbon from the vapour, thus reducing the C/Si ratio. One such material is tantalum. 
 
@@ -118,8 +122,7 @@ It is now vital to have the proper ratio between all of the elements in the vapo
 %Doped growth
 	%Indirect doping growth process
 	
-\section{Contact attachment}
-This section will describe how contacts are attached to the samples. 
+
 
 
 
