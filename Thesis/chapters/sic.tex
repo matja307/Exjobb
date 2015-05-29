@@ -67,11 +67,11 @@ The marked hexagon in figure \ref{fig:hex} marks an area of the crystal plane wh
 	%Change of k, momentum
 %Direct band gap value. 
 
-In SiC the atoms are bonded together with covalent bonds [Citation Zumdahl: Chemistry?] into a crystal. When the atoms are bonded together, the energy levels for the electrons in the material are defined by the material and lattice structure. This means that all materials have characteristic energy levels. When many atoms are bound together, as is the case in crystals, the discrete energy levels for the electrons in the atoms merge together to form continuous bands, called energy bands. 
+In SiC the atoms are bonded together with covalent bonds into a crystal. When the atoms are bonded together, the energy levels for the electrons in the material are defined by the material and lattice structure. This means that all materials have characteristic energy levels. When many atoms are bound together, as is the case in crystals, the discrete energy levels for the electrons in the atoms merge together to form continuous bands, called energy bands. 
 
 The band structure for 3C-SiC is shown as a band diagram in figure \ref{fig:band}. In this figure, each curve describes allowed energies for the electrons, and the spaces in between the curves are not allowed. The x-axis shows different points in reciprocal space, or \emph{k-space}. The marked points are specific points in the first brillouin zone of k-space, and the intermediate intervals form straight lines between the points. This figure has been obtained using the approximate method of pseudopotentials, as described in \cite{Aourag1994}. Here the zero point energy has been chosen to be at the $\Gamma$-point in k-space. 
 
-The grayed area in the figure is the \emph{band gap} of the material, since there are no allowed electronic states in this area. The band with lower energy than the band gap is called the valence band, and the band with higher energy is called the conduction band. 3C-SiC, as is characteristic for semiconductors, has the fermi level in the middle of the band gap. This means that at the temperature of 0 K, all electrons will be in the valence band, and the conduction band will be unoccupied. When the conduction band is unoccupied the material will not be able to conduct electricity. If the temperature is raised above 0 K there will be some occupation of the conduction band and some electrical conduction will be able to occur. With a higher temperature there will be more electrons in the conduction band and thus a higher conductivity of the material. 
+The grayed area in the figure is the \emph{band gap} of the material, since there are no allowed electronic states in this area. The band with lower energy than the band gap is called the valence band, and the band with higher energy is called the conduction band. 3C-SiC, as is characteristic for semiconductors, has the Fermi level in the middle of the band gap. This means that at the temperature of 0 K, all electrons will be in the valence band, and the conduction band will be unoccupied. When the conduction band is unoccupied the material will not be able to conduct electricity. If the temperature is raised above 0 K there will be some occupation of the conduction band and some electrical conduction will be able to occur. With a higher temperature there will be more electrons in the conduction band and thus a higher conductivity of the material. One way to change the position of the Fermi level is to introduce impurities into the crystal, i.e. doping. This will be discussed later. 
 
 \begin{figure}[h]
 \begin{center}
@@ -81,7 +81,7 @@ The grayed area in the figure is the \emph{band gap} of the material, since ther
 \end{center}
 \end{figure}
 
-In the figure \ref{fig:band} it can be seen that the smallest energy difference between the valence and conduction bands is between the $\Gamma$-point in the valence band and the X-point in the conduction band. This difference is called the \emph{band gap}. The difference between the $\Gamma$- and X-points is called the indirect band gap, while the difference between the values at the $\Gamma$-point is called the direct band gap, as illustrated in the figure. These values are given in table \ref{tab:eg}. The value for the indirect band gap at room temperature is taken from the simulation, whereas the latter values are taken from literature. 
+In the figure \ref{fig:band} it can be seen that the smallest energy difference between the valence and conduction bands is between the $\Gamma$-point in the valence band and the X-point in the conduction band. This difference is called the \emph{band gap}. The difference between the $\Gamma$- and X-points is called the indirect band gap, while the difference between the values at the $\Gamma$-point is called the direct band gap, as illustrated in the figure. These values are given in table \ref{tab:eg}. The value for the room temperature band gaps are taken from the simulation, whereas the 2 K value is taken from literature. 
 
 \begin{table}[h]
 \caption{Values for the indirect and direct band gap energies. The indirect values are given both for room temperature and low temperature, as this will be of value later in the thesis.}
@@ -93,21 +93,21 @@ In the figure \ref{fig:band} it can be seen that the smallest energy difference 
   \vspace{1mm}
     $\mathrm{E_{g,indirect}}$  (300 K) & $\mathrm{E_{g,indirect}}$ (2 K) & $\mathrm{E_{g,direct}}$  (300 K)\\
     \hline
-  2.36 eV & 2.42 eV \cite{Bimberg1981} & 6.00 eV \cite{Dalven1965}\\
+  2.36 eV & 2.42 eV \cite{Bimberg1981} & 6.00 eV\\
   \hline  
 \end{tabular}
 \end{center}
 \end{table}
 
-When an electron makes the indirect transition from the valence to the conduction band the energy is increased by E$_\mathrm{g}$, and the k-value is changed, as indicated by $\Delta \mathrm{k}$ in figure \ref{fig:band}. This change of k-value implies a change in momentum of the electron, since k and momentum p is related by
+When an electron makes the indirect transition from the valence to the conduction band the energy is increased by E$_\mathrm{g,indirect}$, and the k-value is changed, as indicated by $\Delta \mathrm{k}$ in figure \ref{fig:band}. This change of k-value implies a change in momentum of the electron, since k and momentum p is related by
 
 \[p = \hbar k,\]
 
-\noindent where $\hbar$ is Dirac's constant. This is of importance when studying interaction between the material and light. Photons are capable of providing the energy needed to transit from the valence to the conduction band, but cannot provide the change of momentum needed. The law of conservation of momentum requires the total momentum of the system to be preserved during the transitions. The extra momentum can however come from interaction with phonons. 
+\noindent where $\hbar$ is Dirac's constant. This is of importance when studying interaction between the material and light. Photons are capable of providing the energy needed to transit from the valence to the conduction band, but cannot provide the change of momentum needed. The law of conservation of momentum requires the total momentum of the system to be preserved during the transitions. The extra momentum can however come from interaction with \emph{phonons}, which are vibrations in the crytsal. 
 
 The phonon energy spectrum has four ground modes, since there are two different kinds of atoms in the material. There are the acoustic and optical phonon modes. Theoretical calculations of the phonon dispersion curves for 3C-SiC have been done by Karch et al. \cite{Karch1994}. They show the four modes: TA, LA, TO, LO, and give the wavelength for each mode. The transition in k-space for the indirect transition is between the $\Gamma$- and the X-points, hence it is of interest to know which phonon wavelengths and energies this corresponds to.  Table \ref{tab:phonons} shows these computed wavelengths and the corresponding energies, which have been calculated using the fact that
 
-\[E_{meV} = \frac{hc(\frac{1}{\lambda_{cm}})}{e}\times 10^5,\]
+\[E_\mathrm{meV} = \frac{hc(\frac{1}{\lambda_{cm}})}{e}\times 10^5,\]
 
 \noindent where h is Planck's constant, c is the speed of light and e is the elementary charge. 
 
@@ -169,15 +169,17 @@ An important factor for how the band structure is changed is the number of valen
 \end{center}
 \end{figure}
 
+As dopants are introduced in the material, the position of the Fermi level relative to the bands change. The fermi level resides in the middle of the band for undoped materials, but will move nearer to the conduction (valence) band as donors (acceptors) are introduced. This change in Fermi energy corresponds to a change in occupancy in the different levels. 
+
 \subsection{Donors}
 % What does it replace, Si or C?
 Since silicon and carbon both have four valence electrons, a donor atom in SiC must have five or more electrons. One common donor is nitrogen, which has five valence electrons. This means that each added N-atom can supply the conduction band with one electron. A material with more electron carriers than the hole counterpart is said to be an \emph{n-type} material. Freitas et al. have measured the binding energy of nitrogen in 3C-SiC, and found it to be 54 meV \cite{Freitas1988}. This means that the lowest N-level is 54 meV below the conduction band. 
 
-N-doping can be achieved intentionally by fabricating the material in a nitrogen atmosphere, but nitrogen always present in sublimation grown material even at vacuum conditions with continuous pumping\cite{Sun2012b}. This means that material grown by this method is generally n-type. The n-type material can also be created by other elements in group five. Reports of doping with As, P and Sb exist, but are far less common than N-doping \cite{Rao1999}. 
+N-doping can be achieved intentionally by fabricating the material in a nitrogen atmosphere, but nitrogen is always present in sublimation grown material even at vacuum conditions with continuous pumping\cite{Sun2012b}. This means that material grown by this method is generally n-type, if no other impurity is present. The n-type material can also be created by other elements in group five. Reports of doping with As, P and Sb exist, but are far less common than N-doping \cite{Rao1999}. 
 
 \subsection{Acceptors}
 % What do they replace, Si or C?
-Acceptor atoms need to have fewer valence electrons than silicon and carbon, which is why group three elements are the most common. These include boron, gallium and aluminum, which have the binding energies 257 meV \cite{Freitas1988} and 735 meV \cite{Richards2003} respectively. A material with more acceptors than donors is said to be \emph{p-type}. Table \ref{tab:dopants} summarizes the different dopant energy levels. 
+Acceptor atoms need to have fewer valence electrons than silicon and carbon, which is why group three elements are the most common acceptors. Examples of acceptor materials are boron and aluminium, which have the binding energies 257 meV \cite{Freitas1988} and 735 meV \cite{Richards2003} respectively. A material with more hole carriers than the electron counterpart is said to be \emph{p-type}. Table \ref{tab:dopants} summarizes the different dopant energy levels. 
 
 \begin{table}[h]
 \caption{Binding energies for some of the most common SiC dopants.}
@@ -197,7 +199,7 @@ Acceptor atoms need to have fewer valence electrons than silicon and carbon, whi
 \end{center}
 \end{table}
 
-The B-doping energy level is of particular interest for photovoltaic applications, where the binding energy is ideal for the intermediate band photovoltaic solar cell. This is described in more detail in chapter \ref{sec:intermediate_band_pvc}. 
+The B-doping energy level is of particular interest for photovoltaic applications, where the binding energy is ideal for the intermediate band photovoltaic solar cell. %This is described in more detail in chapter \ref{sec:intermediate_band_pvc}. 
 \\ 
 
 \noindent 

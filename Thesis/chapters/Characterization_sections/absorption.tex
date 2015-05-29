@@ -6,7 +6,7 @@
 	
 \section{Absorption measurements}
 \label{sec:absorption}
-Absorption measurements are performed to find how much light is absorbed or transmitted when it hits the sample. In this way the band structure can be found even for samples with little or no luminescence. During measurements, light of different wavelengths  hits the sample, some of which is absorbed and some is transmitted. The transmitted light passes through a spectrometer which measures the light intensity as a function of the wavelength. By measuring the light intensity before (I$_0$) and after (I) the sample, it is possible to compute the logarithm of the ratio of the two, which constitutes the \emph{absorption} of the sample, i.e.
+Absorption measurements are performed to find how much light is absorbed or transmitted when it hits the sample. In this way the band structure can be found even for samples with little or no luminescence. During measurements, light of different wavelengths  hits the sample, some of which is absorbed and some transmitted. The transmitted light passes through a spectrometer which measures the light intensity as a function of the wavelength. By measuring the light intensity before (I$_0$) and after (I) the sample, it is possible to compute the logarithm of the ratio of the two, which constitutes the \emph{absorption} of the sample, i.e.
 \begin{equation}
 \label{eq:Abs}
 A(\lambda) = \log\left(\frac{I_0(\lambda)}{I(\lambda)}\right).
@@ -19,21 +19,23 @@ E = \frac{hc}{\lambda},
 \end{equation}
 where h is Planck's constant and c is the speed of light. 
 
-From absorption measurements it is also possible to find the absorption coefficient. This is done by using the Beer-Lambert law of transmission:
-\begin{equation}
-\label{eq:BL}
-I = I_0e^{-\alpha L}.
-\end{equation}
-Where $\alpha$ is the absorption coefficient and L is the thickness of the sample. Combining this with equation \ref{eq:Abs} we can find the absorption coefficient. This is done by
-\[I=I_0e^{-\alpha L} \Longrightarrow \log\left(\frac{I_0}{I}\right)=\alpha L \log(e),\]
-which gives
-\begin{equation}
-\label{eq:abs_coeff}
-\alpha = \frac{A}{L\log(e)}.
-\end{equation}
+%Do I really want this?
+%{
+%From absorption measurements it is also possible to find the absorption coefficient. This is done by using the Beer-Lambert law of transmission:
+%\begin{equation}
+%\label{eq:BL}
+%I = I_0e^{-\alpha L}.
+%\end{equation}
+%Where $\alpha$ is the absorption coefficient and L is the thickness of the sample. Combining this with equation \ref{eq:Abs} we can find the absorption coefficient. This is done by
+%\[I=I_0e^{-\alpha L} \Longrightarrow \log\left(\frac{I_0}{I}\right)=\alpha L \log(e),\]
+%which gives
+%\begin{equation}
+%\label{eq:abs_coeff}
+%\alpha = \frac{A}{L\log(e)}.
+%\end{equation}
 
-Having found the absorption coefficient it is also possible to find the effective band gap from the absorption data. This is done by the means of a \emph{Tauc plot} \cite{Tauc1968}. In this method, the abscissa and ordinate of a plot contain the quantities $h\nu$ and $\sqrt{\alpha h\nu}$ respectively, where $\nu$ is the frequency of the light. If the data is obtained from an indirect semiconductor performing an allowed electron transition, then a part of the graph will be linear. Extrapolating this linear function to the energy axis will yield the band gap. 
-
+%Having found the absorption coefficient it is also possible to find the effective band gap from the absorption data. This is done by the means of a \emph{Tauc plot} \cite{Tauc1968}. In this method, the abscissa and ordinate of a plot contain the quantities $h\nu$ and $\sqrt{\alpha h\nu}$ respectively, where $\nu$ is the frequency of the light. If the data is obtained from an indirect semiconductor performing an allowed electron transition, then a part of the graph will be linear. Extrapolating this linear function to the energy axis will yield the band gap. 
+%}
 
 
 
